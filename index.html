@@ -9,7 +9,7 @@
 	<h1>Survey</h1>
 	<form id="myform" action="index.php" >
 	<br>
-	<h2>What do you think of the UI in this <a href="http://amazon.ca">Amazon</a> site?</h2>	
+	<h2>What do you think of the User Interface in this <a href="http://amazon.ca">Amazon</a> site?</h2>	
 	<br>
 	
 	<a href="http://amazon.ca">
@@ -20,9 +20,15 @@
 	<br>
 	<div class="question">
 		<h2> Personal Information </h2>
-		<p>Name: <input type="text" name="name"></p>
+		<p>Age: <input type="text" name="name"></p>
 		<br>
-		<br>	
+		<p>Gender:
+		<select id="answer">
+			<option value="male" selected="selected">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select>
+		</p>	
 	</div>	
 		
 	<div class="question">
@@ -35,8 +41,8 @@
 		
 
 		<br>
-		<p>The following questions are conrcerning the usability of the website on a scale of 1 to 5(1 being "I strongly disagree" 5 being "I strongly agree")</p>
-		
+		<p>This question is conrcerning the usability of the website on a scale of 1 to 5(1 being "I strongly disagree" 5 being "I strongly agree")</p>
+	
 		<table>
 
 			<tr>
@@ -75,17 +81,28 @@
 		</table>
 
 		<br>
-		<p>On a scale of 1 to 5, how easy is it to navigate? (1 being really hard and 5 being really easy)</p>
-		<input type="radio" id="one" name="scale" value="1">
-		<label for="one">1</label><br>  
-		<input type="radio" id="two" name="scale" value="2">
-		<label for="two">2</label><br>  
-		<input type="radio" id="three" name="scale" value="3">
-		<label for="three">3</label><br>  
-		<input type="radio" id="four" name="scale" value="4">
-		<label for="four">4</label><br>  
-		<input type="radio" id="five" name="scale" value="5">
-		<label for="five">5</label><br>  
+		
+		<p>On a scale of 1 to 5, how do you enjoy using the website? (1 being "I really enjoy" and 5 I do not enjoy)</p>
+		<table>
+			<tr>
+				<td></td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>I really enjoy</td>
+				<td><input type="radio" id="one" name="scale" value="1"></td>
+				<td><input type="radio" id="two" name="scale" value="2"></td> 
+				<td><input type="radio" id="three" name="scale" value="3"></td>  
+				<td><input type="radio" id="four" name="scale" value="4"></td> 
+				<td><input type="radio" id="five" name="scale" value="5"></td>
+				<td>I do not enjoy</td>
+			</tr>
+		</table> 
 		<br>
 		
 		Is the website attractive?<br>

@@ -1,14 +1,22 @@
 body, html {
         
     height: 100%;
+    text-align:center;
 }
 
 table {
-    color: black;
+    /*color: black;*/
     background-color: aliceblue;
     width: 750px;
-
+    margin-left:auto; 
+    margin-right:auto;
+    
 }
+
+/*table.center{
+    margin-left:auto; 
+    margin-right:auto;
+}*/
 
 button {
 
@@ -22,6 +30,7 @@ h1   {
     color: black;
     font-family: arial;
     font-size: 100%;
+    text-align: center;
 
 }
 h2   {
@@ -29,6 +38,7 @@ h2   {
     text-align: left;
     font-family: arial;
     font-size: 150%;
+    text-align: center;
 
 }
 h3   {
@@ -36,6 +46,7 @@ h3   {
     text-align: center;
     font-family: arial;
     font-size: 150%;
+    text-align: center;
 
 }
 
